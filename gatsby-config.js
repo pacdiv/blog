@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `typeof: the blog`,
+    title: `typeof: behind the scenes`,
     author: `Loïc from typeof`,
     description: `Stories to help you to craft better stories about JS.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
