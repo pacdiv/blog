@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    title: `typeof: the blog`,
+    author: `Loïc from typeof`,
+    description: `Stories to help you to craft better stories about JS.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `hellotypeof`,
     },
   },
   plugins: [
@@ -57,11 +57,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `typeof`,
+        short_name: `typeof`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#222222`,
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },

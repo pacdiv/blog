@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { rhythm, scale } from "../utils/typography"
+import "./layout.css"
 
 class Layout extends React.Component {
   render() {
@@ -16,6 +17,9 @@ class Layout extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
+            fontFamily: `Times New Romain`,
+            letterSpacing: "-3px",
+            fontWeight: "600",
           }}
         >
           <Link
@@ -34,8 +38,10 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
+            fontFamily: "Times New Roman",
             marginTop: 0,
+            fontWeight: "600",
+            letterSpacing: "-1.5px",
           }}
         >
           <Link
@@ -63,9 +69,9 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()}, by
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="http://bit.ly/join-typeof-beta" target="blank_">typeof</a>
         </footer>
       </div>
     )
