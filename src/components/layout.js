@@ -1,8 +1,23 @@
 import React from "react"
+import { css } from "@emotion/core"
 import { Link } from "gatsby"
+import styled from "@emotion/styled"
 
-import { rhythm, scale } from "../utils/typography"
+import Form from './form'
+import { rhythm } from "../utils/typography"
 import "./layout.css"
+
+const Header = styled.header`
+  ${({ fullHeight }) =>
+    fullHeight &&
+    css`
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+    `
+  }
+`
 
 class Layout extends React.Component {
   render() {
@@ -12,27 +27,7 @@ class Layout extends React.Component {
 
     if (location.pathname === rootPath) {
       header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-            fontFamily: `Times New Romain`,
-            letterSpacing: "-3px",
-            fontWeight: "600",
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
+        <Form altDisposition={location.pathname === rootPath} />
       )
     } else {
       header = (
@@ -63,15 +58,16 @@ class Layout extends React.Component {
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          padding: `${location.pathname === rootPath ? '0' : '' } ${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header>{header}</header>
+        <Header fullHeight={location.pathname === rootPath}>{header}</Header>
         <main>{children}</main>
         <footer>
+          {location.pathname !== rootPath && <Form />}
           © {new Date().getFullYear()}, by
           {` `}
-          <a href="http://bit.ly/join-typeof-beta" target="blank_">typeof</a>
+          <a href="https://twitter.com/hellotypeof" target="blank_">typeof</a>
         </footer>
       </div>
     )

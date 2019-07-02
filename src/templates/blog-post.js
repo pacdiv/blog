@@ -20,6 +20,8 @@ class BlogPostTemplate extends React.Component {
         />
         <h1
           style={{
+            color: '#ffe70b',
+            fontFamily: "'Merriweather','Georgia',serif",
             marginTop: rhythm(1),
             marginBottom: 0,
           }}
