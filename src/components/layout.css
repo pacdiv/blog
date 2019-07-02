@@ -2,3 +2,8 @@ body {
   background-color: #222222;
   color: #F0F0F0;
 }
+
+blockquote {
+  border-left: 0.32813rem solid #F0F0F0;
+  color: #F0F0F0;
+}
