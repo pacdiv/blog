@@ -1,7 +1,6 @@
 import React from "react"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
-import "whatwg-fetch"
 
 const Container = styled.div`
   margin-bottom: 2em;
