@@ -3,7 +3,7 @@ module.exports = {
     title: `typeof: behind the scenes`,
     author: `Loïc from typeof`,
     description: `Stories to help you to craft better stories about JS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://beta.typeof.co/`,
     social: {
       twitter: `hellotypeof`,
     },
@@ -50,7 +50,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: process.env.GATSBY_TYPEOF_BLOG_ANALYTICS_ID,
       },
     },
     `gatsby-plugin-feed`,
