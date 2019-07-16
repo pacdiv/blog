@@ -4,13 +4,29 @@ import styled from "@emotion/styled"
 
 const Container = styled.div`
   margin-bottom: 2em;
+  margin-top: 6em;
+  position: relative;
+
+  &::before {
+    background-color: #f0f0f0;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: -2em;
+    right: 0;
+  }
 
   ${({ altDisposition }) =>
     altDisposition &&
     css`
       margin-bottom: 0;
-    `
-  }
+      margin-top: 0;
+
+      &::before {
+        content: none;
+      }
+    `}
 `
 
 const StyledForm = styled.form`
@@ -127,15 +143,15 @@ class Form extends React.Component {
     return (
       <Container altDisposition={altDisposition}>
         <Title withoutMarginTop={altDisposition}>
-          Get access to notes from my journey
-          to build an audience as a developer.
+          Get access to notes from my journey to build an audience as a
+          developer.
         </Title>
-        <p>
-          All my previous side-projects failed
-          for the same old reason: no one heard
-          from them. This won't happen again.
-          Neither to me, nor to you.
-        </p>
+        {altDisposition && (
+          <p>
+            All my previous side-projects failed for the same old reason: no one
+            heard from them. This won't happen again. Neither to me, nor to you.
+          </p>
+        )}
         {success ? (
           <p>
             I just sent you an email!
@@ -169,7 +185,8 @@ class Form extends React.Component {
         )}
         {apiError ? (
           <p>
-            An error has occurred. Please contact me at <a href="mailto:loic@pacdiv.co">loic@pacdiv.co</a>.
+            An error has occurred. Please contact me at{" "}
+            <a href="mailto:loic@growthnotes.dev">loic@growthnotes.dev</a>.
           </p>
         ) : (
           <small>*No spam and one-click unsubscribe.</small>
