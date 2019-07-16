@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
         />
         <h1
           style={{
-            color: '#ffe70b',
+            color: "#ffe70b",
             fontFamily: "'Merriweather','Georgia',serif",
             marginTop: rhythm(1),
             marginBottom: 0,
@@ -43,7 +43,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
+        <Bio location={`https://growthnotes.dev${post.fields.slug}`} />
 
         <ul
           style={{
@@ -92,6 +92,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+      fields {
+        slug
       }
     }
   }
