@@ -24,15 +24,12 @@ const Bio = () => {
       site {
         siteMetadata {
           author
-          social {
-            twitter
-          }
         }
       }
     }
   `)
 
-  const { author, social } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
   return (
     <div
       style={{
@@ -54,15 +51,15 @@ const Bio = () => {
         }}
       />
       <p>
-        Stories to help you to craft better stories about JS
+        Notes from my journey to build an audience as a developer
         <br />– By <strong>{author}</strong>
         {` | `}
         <a
           className="colored-link"
-          href={`https://twitter.com/${social.twitter}`}
+          href={window.location}
           target="blank_"
         >
-          Get in touch via Twitter
+          Let’s talk about this on Twitter
         </a>
       </p>
     </div>

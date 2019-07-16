@@ -63,12 +63,12 @@ class Layout extends React.Component {
       >
         <Header fullHeight={location.pathname === rootPath}>{header}</Header>
         <main>{children}</main>
-        <footer>
-          {location.pathname !== rootPath && <Form />}
-          © {new Date().getFullYear()}, by
-          {` `}
-          <a href="https://twitter.com/hellotypeof" target="blank_">typeof</a>
-        </footer>
+        {location.pathname !== rootPath && (
+          <footer>
+            <Form />
+            © {new Date().getFullYear()}, by PACDIV
+          </footer>
+        )}
       </div>
     )
   }
