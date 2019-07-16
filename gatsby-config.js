@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `typeof: behind the scenes`,
-    author: `Loïc from typeof`,
-    description: `Stories to help you to craft better stories about JS.`,
-    siteUrl: `https://beta.typeof.co/`,
+    title: `growthnotes`,
+    author: `PACDIV`,
+    description: `My personal notes to help you to build an audience as a developer.`,
+    siteUrl: `https://growthnotes.dev/`,
     social: {
-      twitter: `hellotypeof`,
+      twitter: `pacdiv_io`,
     },
   },
   plugins: [
@@ -50,20 +50,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GATSBY_TYPEOF_BLOG_ANALYTICS_ID,
+        trackingId: process.env.GATSBY_GROWTHNOTES_SITE_ANALYTICS_ID,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `typeof`,
-        short_name: `typeof`,
+        name: `growthnotes`,
+        short_name: `growthnotes`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#222222`,
         display: `minimal-ui`,
-        icon: `content/assets/typeof-icon.png`,
+        icon: `content/assets/growthnotes-icon.png`,
       },
     },
     `gatsby-plugin-offline`,

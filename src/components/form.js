@@ -70,7 +70,7 @@ const Title = styled.h3`
 `
 
 class Form extends React.Component {
-  static emailingEndpoint = process.env.GATSBY_TYPEOF_BLOG_MAILING_ENDPOINT
+  static emailingEndpoint = process.env.GATSBY_GROWTHNOTES_SITE_MAILING_ENDPOINT
 
   static isEmailAddressValid(email) {
     return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
@@ -126,15 +126,19 @@ class Form extends React.Component {
 
     return (
       <Container altDisposition={altDisposition}>
-        <Title withoutMarginTop={altDisposition}>You blog about JS? Join the discussion!</Title>
+        <Title withoutMarginTop={altDisposition}>
+          Get access to notes from my journey
+          to build an audience as a developer.
+        </Title>
         <p>
-          Are you struggling to reach an audience, to find ideas and time
-          to write? Subscribe and join the discussion group to learn how
-          to get rid of those and start building your audience.
+          All my previous side-projects failed
+          for the same old reason: no one heard
+          from them. This won't happen again.
+          Neither to me, nor to you.
         </p>
         {success ? (
           <p>
-            We just sent you an email!
+            I just sent you an email!
             <br />
             <small>(Please check my spam box, just in case)</small>
           </p>
@@ -158,7 +162,7 @@ class Form extends React.Component {
             <input
               onClick={this.onSubmitClick}
               name="subscribe"
-              value="Join the discussion"
+              value="Tell me more"
               type="submit"
             />
           </StyledForm>
