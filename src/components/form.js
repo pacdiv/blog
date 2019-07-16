@@ -156,7 +156,7 @@ class Form extends React.Component {
           <p>
             I just sent you an email!
             <br />
-            <small>(Please check my spam box, just in case)</small>
+            <small>(Please check your spam box, just in case)</small>
           </p>
         ) : (
           <StyledForm
