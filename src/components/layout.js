@@ -24,6 +24,9 @@ class Layout extends React.Component {
     const { location, title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
+    const homeLink = location.pathname.startsWith("/blog")
+      ? { path: '/', title }
+      : { path: '/blog', title: 'blog' }
 
     if (location.pathname === rootPath) {
       header = (
@@ -45,9 +48,9 @@ class Layout extends React.Component {
               textDecoration: `none`,
               color: `inherit`,
             }}
-            to={`/`}
+            to={homeLink.path}
           >
-            {title}
+            {homeLink.title}
           </Link>
         </h3>
       )
