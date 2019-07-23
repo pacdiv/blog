@@ -7,3 +7,13 @@ blockquote {
   border-left: 0.32813rem solid #F0F0F0;
   color: #F0F0F0;
 }
+
+hr {
+  background-color: #F0F0F0;
+  margin: 3em auto;
+  width: 7em;
+}
+
+h2 {
+  color: rgb(255, 231, 11);
+}

@@ -25,8 +25,8 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     let header
     const homeLink = location.pathname.startsWith("/blog")
-      ? { path: '/', title }
-      : { path: '/blog', title: 'blog' }
+      ? { path: '/blog', title }
+      : { path: '/blog', title: '← blog' }
 
     if (location.pathname === rootPath) {
       header = (
