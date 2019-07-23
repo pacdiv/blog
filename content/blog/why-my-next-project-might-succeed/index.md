@@ -1,7 +1,7 @@
 ---
 title: One reason explains why my 3 last projects failed and the next one might succeed
 date: "2019-07-23"
-description: An introduction to growthnotes.dev, a blog where developers bloggers can discover how I grow growthnotes' audience.
+description: An introduction to growthnotes.dev, a blog where developers bloggers can discover my journey to grow growthnotes' audience.
 ---
 
 I was so excited.
