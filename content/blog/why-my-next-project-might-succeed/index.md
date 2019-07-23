@@ -73,8 +73,7 @@ Well, I'm a newbie in building an audience. This means that, if you dream about 
 
 But I believe in this. I can do it. We can do it.
 
-To keep a decent level of dedication, I need a goal so here it is: to help +50 dev bloggers by the end of the year. 
-To do so, I will share most of my journey through this blog and try to help others on more specific issues through emails. I think emails are the best way to talk one-to-one since everyone has an email address.
+To keep a decent level of dedication, I need a goal so here it is: to help +50 javascript developers by the end of the year. To do so, I will share most of my journey through this blog and try to help others on more specific issues through emails. I think emails are the best way to talk one-to-one since everyone has an email address.
 
 Also, please not that, if you hope for some magic wins, I can't help you. I won't make weird promises as "get 1.000 true fans in 30 days". I see audience building as a difficult long-term process with many frustrating times that can turn out to be an exciting, fascinating and rewarding journey.
 
@@ -82,6 +81,6 @@ ___
 
 In my next posts, we will dive into this goal so stay tuned.
 
-One last thing, please give some feedback and some claps. The first one helps me to improve my work and gives me an extra motivation. The second second one helps people that might have similar interests to discover this post.
+One last thing, please hit the “Let’s talk about this on Twitter” link below to give some feedback. It helps me to improve my work and gives me an extra motivation.
 
 Until next time, take care.
