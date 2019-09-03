@@ -12,8 +12,8 @@ const Header = styled.header`
     fullHeight &&
     css`
       display: flex;
+      flex: 1 0 auto;
       flex-direction: column;
-      height: 100vh;
       justify-content: center;
     `
   }
@@ -62,6 +62,13 @@ class Layout extends React.Component {
           marginRight: `auto`,
           maxWidth: rhythm(24),
           padding: `${location.pathname === rootPath ? '0' : '' } ${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          ...location.pathname === rootPath && {
+            display: `flex`,
+            flexDirection: `column`,
+            justifyContent: `stretch`,
+            alignItems: `center`,
+            minHeight: `85vh`,
+          }
         }}
       >
         <Header fullHeight={location.pathname === rootPath}>{header}</Header>
