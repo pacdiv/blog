@@ -149,7 +149,9 @@ class Form extends React.Component {
         {altDisposition && (
           <p>
             All my previous side-projects failed for the same old reason: no one
-            heard from them. This won't happen again. Neither to me, nor to you.
+            heard from them. I'm currently working on tactics so this doesn't happen again.
+            <br />
+            Subscribe to get notified!
           </p>
         )}
         {success ? (
